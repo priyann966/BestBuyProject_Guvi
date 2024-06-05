@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [BestBuySuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="BBTest(failed)">
+    <classes>
+      <class name="baseBestBuy.TC_01_URLLinkHomepageBestBuy">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="testHomepage"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- baseBestBuy.TC_01_URLLinkHomepageBestBuy -->
+      <class name="baseBestBuy.TC_09_CheckOutPageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="checkoutPage"/>
+        </methods>
+      </class> <!-- baseBestBuy.TC_09_CheckOutPageTest -->
+    </classes>
+  </test> <!-- BBTest(failed) -->
+</suite> <!-- Failed suite [BestBuySuite] -->
