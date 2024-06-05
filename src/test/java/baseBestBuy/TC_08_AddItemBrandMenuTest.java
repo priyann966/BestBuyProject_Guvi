@@ -7,7 +7,7 @@ import pagesBestBuy.HomePage;
 
 public class TC_08_AddItemBrandMenuTest extends BaseClassBB {
 	@Test(priority = 9)
-	public void addItemFromBrands() throws InterruptedException {
+	public void addItemFromBrands() {
 		HomePage homePage = new HomePage(driver);
 
 		homePage.clickOnCountry();

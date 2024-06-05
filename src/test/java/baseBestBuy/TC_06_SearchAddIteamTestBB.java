@@ -9,7 +9,7 @@ import pagesBestBuy.SearchAddItem;
 
 public class TC_06_SearchAddIteamTestBB extends BaseClassBB {
 	@Test(priority = 7)
-	public void addToCart() throws InterruptedException {
+	public void addToCart() {
 		HomePage homePage = new HomePage(driver);
 
 		homePage.clickOnCountry();

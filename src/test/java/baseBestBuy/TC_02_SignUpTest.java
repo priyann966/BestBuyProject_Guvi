@@ -9,7 +9,7 @@ import pagesBestBuy.SignUpBestBuy;
 
 public class TC_02_SignUpTest extends BaseClassBB {
 	@Test(priority = 4)
-	public void signupTest() throws InterruptedException {
+	public void signupTest()  {
 		HomePage homePage = new HomePage(driver);
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -27,7 +27,7 @@ public class TC_02_SignUpTest extends BaseClassBB {
 		  signup.setConfirmPassword("Gammi@1234");
 		  signup.setMobileNumber("5555559819");
 		  signup.clickCreatAccount();
-		  //signup.clickOnAccountIcon();
+		  signup.clickOnAccountIcon();
 		  
 	}
 

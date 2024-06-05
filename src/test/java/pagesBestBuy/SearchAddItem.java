@@ -46,19 +46,18 @@ public class SearchAddItem {
 		//element.click();
 	}
 
-	@FindBy(xpath = "//button[@data-sku-id='6502577'][1]")
-	WebElement cartelement;
+//	@FindBy(xpath = "//button[@data-sku-id='6502577'][1]")
+//	WebElement cartelement;
 
 	public void clickonCartElement() {
-//		Actions a = new Actions(driver);
-//		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-//		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(15));
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-sku-id=\\\"6502577\\\"][1]"))).click();	
 
-		cartelement.click();
+		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-sku-id='6502577'][1]"))).click();	
+
+		//cartelement.click();
 	}
 	public void cartButton() {
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement cartbutton = w
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Cart']")));
 		cartbutton.click();

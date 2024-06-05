@@ -51,15 +51,15 @@ public class AddItemByDeptMenu {
 	}
 
 	public void scrollDeptElement() {
-		Actions a = new Actions(driver);
-		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		WebElement element = driver
-				.findElement(By.xpath("//a[text()='Sony - 65\" Class BRAVIA XR X90L LED 4K UHD Smart Google TV']"));
-		// element.click();
+		WebElement element = driver.findElement(By.xpath("//a[text()='Sony - 65\" Class BRAVIA XR X90L LED 4K UHD Smart Google TV']"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element);
+		actions.perform();
+
 	}
 
 	public void clickonDeptCartElement() {
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 		WebElement deptcartelement = w
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-sku-id='6544733'][1]")));
@@ -71,7 +71,7 @@ public class AddItemByDeptMenu {
 //	WebElement cartbutton;
 
 	public void cartButton() {
-		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement deptcartelement = w
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Cart']")));
 		deptcartelement.click();

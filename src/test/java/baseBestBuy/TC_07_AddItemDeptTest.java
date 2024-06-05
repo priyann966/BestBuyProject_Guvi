@@ -13,7 +13,7 @@ public class TC_07_AddItemDeptTest extends BaseClassBB {
 	
 	@Test(priority = 8)
 
-	public void addItemShopByDep() throws InterruptedException {
+	public void addItemShopByDep() {
 		
 		
 		HomePage homePage = new HomePage(driver);

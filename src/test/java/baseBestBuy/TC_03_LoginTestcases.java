@@ -9,7 +9,7 @@ import pagesBestBuy.SignUpBestBuy;
 
 public class TC_03_LoginTestcases extends BaseClassBB {
   @Test(priority = 5)
-  public void loginTest() throws InterruptedException {
+  public void loginTest()  {
 	  System.out.println("Running loginTest");
 	  HomePage homePage = new HomePage(driver);
 	  homePage.clickOnCountry();
@@ -23,7 +23,7 @@ public class TC_03_LoginTestcases extends BaseClassBB {
 	  loginBestBuy.enterPassword("Priya@123");
 	  //loginBestBuy.clickonSkip();
 	  loginBestBuy.clickSignInButton();
-	  //signup.clickOnAccountIcon();
+	  signup.clickOnAccountIcon();
 	  System.out.println("logined succesfully");
 
   }

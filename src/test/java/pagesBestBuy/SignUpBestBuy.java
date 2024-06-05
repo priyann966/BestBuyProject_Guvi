@@ -84,7 +84,7 @@ final WebDriver driver;
 
 
 	public void clickCreatAccount() {
-		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(25));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[text()='Create an Account']"))).click();		
 
 //		WebElement clickcreataccount=driver.findElement(By.xpath("//button[text()='Create an Account']"));

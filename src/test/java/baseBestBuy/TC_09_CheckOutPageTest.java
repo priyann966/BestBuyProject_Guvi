@@ -13,7 +13,7 @@ import pagesBestBuy.SearchAddItem;
 public class TC_09_CheckOutPageTest extends BaseClassBB {
 
 	@Test(priority = 11, expectedExceptions = NoSuchElementException.class)
-	public void checkoutPage() throws InterruptedException {
+	public void checkoutPage() {
 		HomePage homePage = new HomePage(driver);
 
 		homePage.clickOnCountry();
@@ -22,7 +22,7 @@ public class TC_09_CheckOutPageTest extends BaseClassBB {
 		searchitem.enterSearchText("mouse");
 
 		searchitem.clickonSearchButton();
-		// searchitem.scrollElement();
+		searchitem.scrollElement();
 
 		searchitem.clickonCartElement();
 

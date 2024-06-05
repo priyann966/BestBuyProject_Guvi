@@ -11,7 +11,7 @@ import pagesBestBuy.NavigationOfAllMenu;
 
 public class TC_05_TestNavigationOfAllMenu extends BaseClassBB {
 	@Test(priority = 6)
-	public void testNavigationAllMenuTitle() throws InterruptedException {
+	public void testNavigationAllMenuTitle() throws InterruptedException  {
 		HomePage homePage = new HomePage(driver);
 		homePage.clickOnCountry();
 		NavigationOfAllMenu allmenu = new NavigationOfAllMenu(driver);

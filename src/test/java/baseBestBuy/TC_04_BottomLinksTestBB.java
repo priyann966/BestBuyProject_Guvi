@@ -13,7 +13,7 @@ import pagesBestBuy.SearchAddItem;
 
 public class TC_04_BottomLinksTestBB extends BaseClassBB {
 	@Test(priority = 10)
-	public void toVerifyBottomLinks() throws InterruptedException {
+	public void toVerifyBottomLinks() {
 		HomePage homePage = new HomePage(driver);
 		homePage.clickOnCountry();
 		
