@@ -21,31 +21,31 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClassBB {
 
 	public WebDriver driver;
 
 	@BeforeMethod
 	public void launchBrowser() {
-//		System.setProperty("webdriver.gecko.driver", "C:\\Users\\priya\\Desktop\\drivers\\geckodriver.exe");
+//		WebDriverManager.firefoxdriver().setup();
 //		driver = new FirefoxDriver();
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\priya\\Desktop\\drivers\\chromedriver.exe");
 //        ChromeOptions opt =new ChromeOptions();
 //        opt.addArguments("--headless=new");
+		WebDriverManager.chromedriver().setup();
+
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.bestbuy.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(35));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
-		//WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
-
-
 		System.out.println("Browser launched");
 	}
 
 	@AfterMethod
 	public void closeBrowser() throws IOException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
         ((JavascriptExecutor) driver).executeScript("document.body.style.zoom = '0.5'");
 		TakesScreenshot screenshot = (TakesScreenshot)driver;
 		//Saving the screenshot in desired location

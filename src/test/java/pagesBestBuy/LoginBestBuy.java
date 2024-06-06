@@ -53,9 +53,10 @@ public class LoginBestBuy extends BaseClassBB{
 	
 //	@FindBy(xpath="//button[text()='Sign In']")
 //	WebElement signInButton;
-	public void clickSignInButton() {
+	public void clickSignInButton() throws InterruptedException {
 		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[text()='Sign In']"))).click();	
+		Thread.sleep(5000);
 		//signInButton.click();
 	}
 	

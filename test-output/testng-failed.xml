@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="baseBestBuy.TC_09_CheckOutPageTest">
+      <class name="baseBestBuy.TC_06_SearchAddIteamTestBB">
         <methods>
           <include name="closeBrowser"/>
           <include name="launchBrowser"/>
-          <include name="checkoutPage"/>
+          <include name="addToCart"/>
         </methods>
-      </class> <!-- baseBestBuy.TC_09_CheckOutPageTest -->
+      </class> <!-- baseBestBuy.TC_06_SearchAddIteamTestBB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

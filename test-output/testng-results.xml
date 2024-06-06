@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-06T00:45:55 IST" name="Default suite" finished-at="2024-06-06T00:47:19 IST" duration-ms="84318">
+  <suite started-at="2024-06-06T22:59:23 IST" name="Default suite" finished-at="2024-06-06T23:00:49 IST" duration-ms="85188">
     <groups>
     </groups>
-    <test started-at="2024-06-06T00:45:55 IST" name="Default test" finished-at="2024-06-06T00:47:19 IST" duration-ms="84318">
+    <test started-at="2024-06-06T22:59:23 IST" name="Default test" finished-at="2024-06-06T23:00:49 IST" duration-ms="85188">
       <class name="baseBestBuy.TC_09_CheckOutPageTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:baseBestBuy.TC_09_CheckOutPageTest@2a65fe7c]" started-at="2024-06-06T00:45:55 IST" name="launchBrowser" finished-at="2024-06-06T00:46:01 IST" duration-ms="6418" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:baseBestBuy.TC_09_CheckOutPageTest@2a65fe7c]" started-at="2024-06-06T22:59:24 IST" name="launchBrowser" finished-at="2024-06-06T22:59:30 IST" duration-ms="6606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="checkoutPage()[pri:11, instance:baseBestBuy.TC_09_CheckOutPageTest@2a65fe7c]" started-at="2024-06-06T00:46:01 IST" name="checkoutPage" finished-at="2024-06-06T00:47:18 IST" duration-ms="77014" status="PASS">
+        <test-method signature="checkoutPage()[pri:11, instance:baseBestBuy.TC_09_CheckOutPageTest@2a65fe7c]" started-at="2024-06-06T22:59:30 IST" name="checkoutPage" finished-at="2024-06-06T23:00:48 IST" duration-ms="77617" status="PASS">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='number']"}
@@ -20,9 +20,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.19.0', revision: '5f9cec8963'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5136fc7b952aca1bd9b236507e10e61e, findElement {using=xpath, value=//input[@id='number']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61373}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61373/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5136fc7b952aca1bd9b236507e10e61e]]>
+Command: [3961c9bc87f2b74395ce052a57b4a38d, findElement {value=//input[@id='number'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53048/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3961c9bc87f2b74395ce052a57b4a38d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='number']"}
@@ -31,9 +31,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.19.0', revision: '5f9cec8963'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5136fc7b952aca1bd9b236507e10e61e, findElement {using=xpath, value=//input[@id='number']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61373}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61373/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5136fc7b952aca1bd9b236507e10e61e
+Command: [3961c9bc87f2b74395ce052a57b4a38d, findElement {value=//input[@id='number'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53048/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3961c9bc87f2b74395ce052a57b4a38d
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -85,7 +85,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:baseBestBuy.TC_09_CheckOutPageTest@2a65fe7c]" started-at="2024-06-06T00:47:18 IST" name="closeBrowser" finished-at="2024-06-06T00:47:19 IST" duration-ms="807" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:baseBestBuy.TC_09_CheckOutPageTest@2a65fe7c]" started-at="2024-06-06T23:00:48 IST" name="closeBrowser" finished-at="2024-06-06T23:00:49 IST" duration-ms="913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

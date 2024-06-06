@@ -83,9 +83,10 @@ final WebDriver driver;
 	}
 
 
-	public void clickCreatAccount() {
+	public void clickCreatAccount() throws InterruptedException {
 		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(25));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[text()='Create an Account']"))).click();		
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[text()='Create an Account']"))).click();	
+		Thread.sleep(4000);
 
 //		WebElement clickcreataccount=driver.findElement(By.xpath("//button[text()='Create an Account']"));
 //		clickcreataccount.click();

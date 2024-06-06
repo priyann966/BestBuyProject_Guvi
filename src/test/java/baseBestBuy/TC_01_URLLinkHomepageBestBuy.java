@@ -16,8 +16,6 @@ import pagesBestBuy.HomePage;
 
 public class TC_01_URLLinkHomepageBestBuy extends BaseClassBB {
 
-	
-	
 	@Test(priority = 2)
 	public void testHomepage() {
 		HomePage homePage = new HomePage(driver);
@@ -34,12 +32,12 @@ public class TC_01_URLLinkHomepageBestBuy extends BaseClassBB {
 	}
 
 	@Test(priority = 1)
-	public void verifyingUrl() throws IOException{
+	public void verifyingUrl() throws IOException {
 		String url = "https://www.bestbuy.com/";
-		 
+
 //		URI uri= new URI(urlString);
 //		URL url =uri.toURL();
-	      URL link = new URL(url); 
+		URL link = new URL(url);
 
 		HttpURLConnection httpURLConnection = (HttpURLConnection) link.openConnection();
 		httpURLConnection.setConnectTimeout(3000);
