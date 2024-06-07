@@ -3,13 +3,6 @@
 <suite thread-count="1" name="Failed suite [AutomationBBSuite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="1" name="BestBuyTest(failed)" verbose="0">
     <classes>
-      <class name="baseBestBuy.TC_03_LoginTestcases">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="loginTest"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- baseBestBuy.TC_03_LoginTestcases -->
       <class name="baseBestBuy.TC_09_CheckOutPageTest">
         <methods>
           <include name="closeBrowser"/>
@@ -17,27 +10,6 @@
           <include name="checkoutPage"/>
         </methods>
       </class> <!-- baseBestBuy.TC_09_CheckOutPageTest -->
-      <class name="baseBestBuy.TC_05_TestNavigationOfAllMenu">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="testNavigationAllMenuTitle"/>
-        </methods>
-      </class> <!-- baseBestBuy.TC_05_TestNavigationOfAllMenu -->
-      <class name="baseBestBuy.TC_02_SignUpTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="signupTest"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- baseBestBuy.TC_02_SignUpTest -->
-      <class name="baseBestBuy.TC_06_SearchAddIteamTestBB">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="addToCart"/>
-        </methods>
-      </class> <!-- baseBestBuy.TC_06_SearchAddIteamTestBB -->
     </classes>
   </test> <!-- BestBuyTest(failed) -->
 </suite> <!-- Failed suite [AutomationBBSuite] -->

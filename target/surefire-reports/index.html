@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 5 failed,   6 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,27 +103,7 @@
                     <div class="method-list-content failed suite-AutomationBBSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_06_SearchAddIteamTestBB" class="method navigator-link" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_09_CheckOutPageTest" class="method navigator-link" hash-for-method="checkoutPage">checkoutPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_03_LoginTestcases" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_02_SignUpTest" class="method navigator-link" hash-for-method="signupTest">signupTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_05_TestNavigationOfAllMenu" class="method navigator-link" hash-for-method="testNavigationAllMenuTitle">testNavigationAllMenuTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-AutomationBBSuite -->
@@ -147,12 +127,32 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_06_SearchAddIteamTestBB" class="method navigator-link" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_03_LoginTestcases" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_01_URLLinkHomepageBestBuy" class="method navigator-link" hash-for-method="selectLocation">selectLocation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_02_SignUpTest" class="method navigator-link" hash-for-method="signupTest">signupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_01_URLLinkHomepageBestBuy" class="method navigator-link" hash-for-method="testHomepage">testHomepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationBBSuite" title="baseBestBuy.TC_05_TestNavigationOfAllMenu" class="method navigator-link" hash-for-method="testNavigationAllMenuTitle">testNavigationAllMenuTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -180,53 +180,6 @@
           <div class="suite-AutomationBBSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">baseBestBuy.TC_03_LoginTestcases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class=&apos;v-p-right-xxs line-clamp&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pagesBestBuy.SignUpBestBuy.clickOnAccountIcon(SignUpBestBuy.java:97)
-	at baseBestBuy.TC_03_LoginTestcases.loginTest(TC_03_LoginTestcases.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;v-p-right-xxs line-clamp&apos;]&quot;}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e163239e1f0f4758a467c8ff4e715f44, findElement {using=xpath, value=//span[@class=&apos;v-p-right-xxs line-clamp&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63027/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e163239e1f0f4758a467c8ff4e715f44
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 32 more
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationBBSuite-class-failed -->
-          <div class="suite-AutomationBBSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">baseBestBuy.TC_09_CheckOutPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -236,64 +189,25 @@ Session ID: e163239e1f0f4758a467c8ff4e715f44
                   </a> <!-- checkoutPage -->
                   <span class="method-name">checkoutPage</span>
                   <div class="stack-trace">org.testng.TestException: 
-Expected exception of type class org.openqa.selenium.NoSuchElementException but got org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@data-sku-id=&apos;6502577&apos;][1] (tried for 30 second(s) with 500 milliseconds interval)
+Expected exception of type class org.openqa.selenium.NoSuchElementException but got org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=125.0.6422.142)
+Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1cf06c74ae100904491c8b63f6def75, clickElement {id=f.B18504F339AA71A19424F2EDB6580ACB.d.88BD33A8017104E81BEF98DD44181A27.e.15}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63181/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1cf06c74ae100904491c8b63f6def75)] -&gt; xpath: //h4[text()=&apos;United States&apos;][1]]
+Session ID: d1cf06c74ae100904491c8b63f6def75
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@data-sku-id=&apos;6502577&apos;][1] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pagesBestBuy.SearchAddItem.clickonCartElement(SearchAddItem.java:55)
-	at baseBestBuy.TC_09_CheckOutPageTest.checkoutPage(TC_09_CheckOutPageTest.java:27)
-	... 26 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@data-sku-id=&apos;6502577&apos;][1]&quot;}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f61d3008dc3ca0f549ee385b184ddf9d, findElement {using=xpath, value=//button[@data-sku-id=&apos;6502577&apos;][1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62452/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f61d3008dc3ca0f549ee385b184ddf9d
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 32 more
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationBBSuite-class-failed -->
-          <div class="suite-AutomationBBSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">baseBestBuy.TC_05_TestNavigationOfAllMenu</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testNavigationAllMenuTitle">
-                  </a> <!-- testNavigationAllMenuTitle -->
-                  <span class="method-name">testNavigationAllMenuTitle</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;universal-nav-link&quot; data-track=&quot;shopWithExpert&quot; href=&quot;https://www.bestbuy.com/services/triage/shopping&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_self&quot;&gt;...&lt;/a&gt; is not clickable at point (425, 21). Other element would receive the click: &lt;div id=&quot;confirmIt-backdrop&quot; class=&quot;confirmIt modal-backdrop in&quot;&gt;&lt;/div&gt;
+Caused by: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
   (Session info: chrome=125.0.6422.142)
 Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [01397fb9941a126438c958ea83cfa7bc, clickElement {id=f.CF7E70FDB094BFB3C9ACEA6B8DDCE8F5.d.670936AE333D001708B2FDCF17E7F4F3.e.379}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62300}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62300/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (01397fb9941a126438c958ea83cfa7bc)] -&gt; xpath: //a[text()=&apos;Shop with an Expert&apos;][1]]
-Session ID: 01397fb9941a126438c958ea83cfa7bc
+Command: [d1cf06c74ae100904491c8b63f6def75, clickElement {id=f.B18504F339AA71A19424F2EDB6580ACB.d.88BD33A8017104E81BEF98DD44181A27.e.15}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63181/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1cf06c74ae100904491c8b63f6def75)] -&gt; xpath: //h4[text()=&apos;United States&apos;][1]]
+Session ID: d1cf06c74ae100904491c8b63f6def75
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -305,104 +219,10 @@ Session ID: 01397fb9941a126438c958ea83cfa7bc
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy9.click(Unknown Source)
-	at pagesBestBuy.NavigationOfAllMenu.shopWithanExpert(NavigationOfAllMenu.java:93)
-	at baseBestBuy.TC_05_TestNavigationOfAllMenu.testNavigationAllMenuTitle(TC_05_TestNavigationOfAllMenu.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationBBSuite-class-failed -->
-          <div class="suite-AutomationBBSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">baseBestBuy.TC_02_SignUpTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="signupTest">
-                  </a> <!-- signupTest -->
-                  <span class="method-name">signupTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class=&apos;v-p-right-xxs line-clamp&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pagesBestBuy.SignUpBestBuy.clickOnAccountIcon(SignUpBestBuy.java:97)
-	at baseBestBuy.TC_02_SignUpTest.signupTest(TC_02_SignUpTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;v-p-right-xxs line-clamp&apos;]&quot;}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e902ceb90dcdf5d216cbfa0c959343dd, findElement {using=xpath, value=//span[@class=&apos;v-p-right-xxs line-clamp&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61949}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61949/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e902ceb90dcdf5d216cbfa0c959343dd
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 32 more
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutomationBBSuite-class-failed -->
-          <div class="suite-AutomationBBSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">baseBestBuy.TC_06_SearchAddIteamTestBB</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addToCart">
-                  </a> <!-- addToCart -->
-                  <span class="method-name">addToCart</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@data-sku-id=&apos;6502577&apos;][1] (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pagesBestBuy.SearchAddItem.clickonCartElement(SearchAddItem.java:55)
-	at baseBestBuy.TC_06_SearchAddIteamTestBB.addToCart(TC_06_SearchAddIteamTestBB.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@data-sku-id=&apos;6502577&apos;][1]&quot;}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e419644a46b30d956b8716e64444438, findElement {using=xpath, value=//button[@data-sku-id=&apos;6502577&apos;][1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\priya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62050}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62050/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e419644a46b30d956b8716e64444438
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 32 more
-... Removed 32 stack frames
+	at pagesBestBuy.HomePage.clickOnCountry(HomePage.java:22)
+	at baseBestBuy.TC_09_CheckOutPageTest.checkoutPage(TC_09_CheckOutPageTest.java:21)
+	... 26 more
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -411,14 +231,88 @@ Session ID: 7e419644a46b30d956b8716e64444438
           <div class="suite-AutomationBBSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">baseBestBuy.TC_08_AddItemBrandMenuTest</span>
+              <span class="class-name">baseBestBuy.TC_03_LoginTestcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addItemFromBrands">
-                  </a> <!-- addItemFromBrands -->
-                  <span class="method-name">addItemFromBrands</span>
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationBBSuite-class-passed -->
+          <div class="suite-AutomationBBSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">baseBestBuy.TC_02_SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signupTest">
+                  </a> <!-- signupTest -->
+                  <span class="method-name">signupTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationBBSuite-class-passed -->
+          <div class="suite-AutomationBBSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">baseBestBuy.TC_06_SearchAddIteamTestBB</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCart">
+                  </a> <!-- addToCart -->
+                  <span class="method-name">addToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationBBSuite-class-passed -->
+          <div class="suite-AutomationBBSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">baseBestBuy.TC_05_TestNavigationOfAllMenu</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigationAllMenuTitle">
+                  </a> <!-- testNavigationAllMenuTitle -->
+                  <span class="method-name">testNavigationAllMenuTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationBBSuite-class-passed -->
+          <div class="suite-AutomationBBSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">baseBestBuy.TC_01_URLLinkHomepageBestBuy</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectLocation">
+                  </a> <!-- selectLocation -->
+                  <span class="method-name">selectLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomepage">
+                  </a> <!-- testHomepage -->
+                  <span class="method-name">testHomepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyingUrl">
+                  </a> <!-- verifyingUrl -->
+                  <span class="method-name">verifyingUrl</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -456,28 +350,14 @@ Session ID: 7e419644a46b30d956b8716e64444438
           <div class="suite-AutomationBBSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">baseBestBuy.TC_01_URLLinkHomepageBestBuy</span>
+              <span class="class-name">baseBestBuy.TC_08_AddItemBrandMenuTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectLocation">
-                  </a> <!-- selectLocation -->
-                  <span class="method-name">selectLocation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testHomepage">
-                  </a> <!-- testHomepage -->
-                  <span class="method-name">testHomepage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyingUrl">
-                  </a> <!-- verifyingUrl -->
-                  <span class="method-name">verifyingUrl</span>
+                  <a name="addItemFromBrands">
+                  </a> <!-- addItemFromBrands -->
+                  <span class="method-name">addItemFromBrands</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -494,12 +374,13 @@ Session ID: 7e419644a46b30d956b8716e64444438
 &lt;suite thread-count=&quot;1&quot; name=&quot;AutomationBBSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;BestBuyTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;baseBestBuy.TC_02_SignUpTest&quot;/&gt;
       &lt;class name=&quot;baseBestBuy.TC_06_SearchAddIteamTestBB&quot;/&gt;
-      &lt;class name=&quot;baseBestBuy.TC_08_AddItemBrandMenuTest&quot;/&gt;
       &lt;class name=&quot;baseBestBuy.TC_05_TestNavigationOfAllMenu&quot;/&gt;
-      &lt;class name=&quot;baseBestBuy.TC_09_CheckOutPageTest&quot;/&gt;
       &lt;class name=&quot;baseBestBuy.TC_01_URLLinkHomepageBestBuy&quot;/&gt;
+      &lt;class name=&quot;baseBestBuy.TC_05_TestNavigationOfAllMenu&quot;/&gt;
+      &lt;class name=&quot;baseBestBuy.TC_02_SignUpTest&quot;/&gt;
+      &lt;class name=&quot;baseBestBuy.TC_09_CheckOutPageTest&quot;/&gt;
+      &lt;class name=&quot;baseBestBuy.TC_08_AddItemBrandMenuTest&quot;/&gt;
       &lt;class name=&quot;baseBestBuy.TC_04_BottomLinksTestBB&quot;/&gt;
       &lt;class name=&quot;baseBestBuy.TC_07_AddItemDeptTest&quot;/&gt;
       &lt;class name=&quot;baseBestBuy.TC_03_LoginTestcases&quot;/&gt;
@@ -516,7 +397,7 @@ Session ID: 7e419644a46b30d956b8716e64444438
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BestBuyTest (9 classes)</span>
+                <span class="test-name">BestBuyTest (10 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -544,49 +425,49 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkoutPage')
-data.setCell(0, 2, 'baseBestBuy.TC_09_CheckOutPageTest')
-data.setCell(0, 3, 56309);
+data.setCell(0, 1, 'testNavigationAllMenuTitle')
+data.setCell(0, 2, 'baseBestBuy.TC_05_TestNavigationOfAllMenu')
+data.setCell(0, 3, 67263);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addToCart')
-data.setCell(1, 2, 'baseBestBuy.TC_06_SearchAddIteamTestBB')
-data.setCell(1, 3, 55300);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'baseBestBuy.TC_03_LoginTestcases')
+data.setCell(1, 3, 60192);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'baseBestBuy.TC_03_LoginTestcases')
-data.setCell(2, 3, 52374);
+data.setCell(2, 1, 'addItemFromBrands')
+data.setCell(2, 2, 'baseBestBuy.TC_08_AddItemBrandMenuTest')
+data.setCell(2, 3, 42419);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testNavigationAllMenuTitle')
-data.setCell(3, 2, 'baseBestBuy.TC_05_TestNavigationOfAllMenu')
-data.setCell(3, 3, 44078);
+data.setCell(3, 1, 'signupTest')
+data.setCell(3, 2, 'baseBestBuy.TC_02_SignUpTest')
+data.setCell(3, 3, 42343);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addItemFromBrands')
-data.setCell(4, 2, 'baseBestBuy.TC_08_AddItemBrandMenuTest')
-data.setCell(4, 3, 38565);
+data.setCell(4, 1, 'addToCart')
+data.setCell(4, 2, 'baseBestBuy.TC_06_SearchAddIteamTestBB')
+data.setCell(4, 3, 35425);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'signupTest')
-data.setCell(5, 2, 'baseBestBuy.TC_02_SignUpTest')
-data.setCell(5, 3, 32115);
+data.setCell(5, 1, 'addItemShopByDep')
+data.setCell(5, 2, 'baseBestBuy.TC_07_AddItemDeptTest')
+data.setCell(5, 3, 26484);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'addItemShopByDep')
-data.setCell(6, 2, 'baseBestBuy.TC_07_AddItemDeptTest')
-data.setCell(6, 3, 25210);
+data.setCell(6, 1, 'toVerifyBottomLinks')
+data.setCell(6, 2, 'baseBestBuy.TC_04_BottomLinksTestBB')
+data.setCell(6, 3, 16123);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'toVerifyBottomLinks')
-data.setCell(7, 2, 'baseBestBuy.TC_04_BottomLinksTestBB')
-data.setCell(7, 3, 19318);
+data.setCell(7, 1, 'checkoutPage')
+data.setCell(7, 2, 'baseBestBuy.TC_09_CheckOutPageTest')
+data.setCell(7, 3, 15154);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyingUrl')
+data.setCell(8, 1, 'selectLocation')
 data.setCell(8, 2, 'baseBestBuy.TC_01_URLLinkHomepageBestBuy')
-data.setCell(8, 3, 9880);
+data.setCell(8, 3, 12019);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'selectLocation')
+data.setCell(9, 1, 'verifyingUrl')
 data.setCell(9, 2, 'baseBestBuy.TC_01_URLLinkHomepageBestBuy')
-data.setCell(9, 3, 8486);
+data.setCell(9, 3, 8338);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'testHomepage')
 data.setCell(10, 2, 'baseBestBuy.TC_01_URLLinkHomepageBestBuy')
-data.setCell(10, 3, 33);
+data.setCell(10, 3, 9);
 window.suiteTableData['AutomationBBSuite']= { tableData: data, tableDiv: 'times-div-AutomationBBSuite'}
 return data;
 }
@@ -617,172 +498,164 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">baseBestBuy.TC_02_SignUpTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">baseBestBuy.TC_06_SearchAddIteamTestBB</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">signupTest</span>
-                <span class="method-start">9929 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">42052 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">baseBestBuy.TC_06_SearchAddIteamTestBB</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">43276 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">addToCart</span>
-                <span class="method-start">48905 ms</span>
+                <span class="method-start">6406 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">104215 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">baseBestBuy.TC_08_AddItemBrandMenuTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">105288 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">addItemFromBrands</span>
-                <span class="method-start">111435 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">150001 ms</span>
+                <span class="method-start">41834 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">baseBestBuy.TC_05_TestNavigationOfAllMenu</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">150746 ms</span>
+                <span class="method-start">42725 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testNavigationAllMenuTitle</span>
-                <span class="method-start">156697 ms</span>
+                <span class="method-start">48590 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">200785 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">baseBestBuy.TC_09_CheckOutPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">201592 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkoutPage</span>
-                <span class="method-start">206957 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">263270 ms</span>
+                <span class="method-start">115854 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">baseBestBuy.TC_01_URLLinkHomepageBestBuy</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">264401 ms</span>
+                <span class="method-start">117286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyingUrl</span>
-                <span class="method-start">269624 ms</span>
+                <span class="method-start">123855 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">279504 ms</span>
+                <span class="method-start">132194 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">280213 ms</span>
+                <span class="method-start">132892 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testHomepage</span>
-                <span class="method-start">286652 ms</span>
+                <span class="method-start">141363 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">286685 ms</span>
+                <span class="method-start">141373 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">287351 ms</span>
+                <span class="method-start">142322 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectLocation</span>
-                <span class="method-start">293121 ms</span>
+                <span class="method-start">147711 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">301607 ms</span>
+                <span class="method-start">159731 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">baseBestBuy.TC_02_SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">160803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signupTest</span>
+                <span class="method-start">166422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">208766 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">baseBestBuy.TC_09_CheckOutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">209504 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkoutPage</span>
+                <span class="method-start">216116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">231277 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">baseBestBuy.TC_08_AddItemBrandMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">232177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addItemFromBrands</span>
+                <span class="method-start">237873 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">280293 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">baseBestBuy.TC_04_BottomLinksTestBB</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">302844 ms</span>
+                <span class="method-start">281411 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">toVerifyBottomLinks</span>
-                <span class="method-start">308717 ms</span>
+                <span class="method-start">286985 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">328036 ms</span>
+                <span class="method-start">303109 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">baseBestBuy.TC_07_AddItemDeptTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">328814 ms</span>
+                <span class="method-start">303969 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addItemShopByDep</span>
-                <span class="method-start">333807 ms</span>
+                <span class="method-start">309387 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">359018 ms</span>
+                <span class="method-start">335872 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">baseBestBuy.TC_03_LoginTestcases</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">359899 ms</span>
+                <span class="method-start">336931 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">365499 ms</span>
+                <span class="method-start">342833 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">417874 ms</span>
+                <span class="method-start">403026 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

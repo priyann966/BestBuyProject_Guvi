@@ -31,6 +31,7 @@ public class BaseClassBB {
 	public void launchBrowser() {
 //		WebDriverManager.firefoxdriver().setup();
 //		driver = new FirefoxDriver();
+//		 running tests with headlesschrome facing issues its taking more time to execute and tests are failing
 //        ChromeOptions opt =new ChromeOptions();
 //        opt.addArguments("--headless=new");
 		WebDriverManager.chromedriver().setup();
@@ -46,17 +47,17 @@ public class BaseClassBB {
 	@AfterMethod
 	public void closeBrowser() throws IOException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
-        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom = '0.5'");
-		TakesScreenshot screenshot = (TakesScreenshot)driver;
-		//Saving the screenshot in desired location
-		File source = screenshot.getScreenshotAs(OutputType.FILE);
-		//Path to the location to save screenshot
-		
-		FileUtils.copyFile(source, new File("./SeleniumScreenshots/Screen"+new Date().getTime()+".png"));
+		((JavascriptExecutor) driver).executeScript("document.body.style.zoom = '0.5'");
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		// Saving the screenshot in desired location
+	File source = screenshot.getScreenshotAs(OutputType.FILE);
+		// Path to the location to save screenshot
+
+		FileUtils.copyFile(source, new File("./SeleniumScreenshots/Screen" + new Date().getTime() + ".png"));
 		System.out.println("Screenshot is captured");
 		driver.quit();
 		System.out.println("Browser close");
-		
+
 	}
 
 }

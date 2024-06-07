@@ -3,6 +3,7 @@ package pagesBestBuy;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,13 +38,13 @@ public class LoginBestBuy extends BaseClassBB{
 	@FindBy(id="fld-e")
 	WebElement email_;
 	public void enterEmail(String stremail_) {
-		email_.sendKeys(stremail_);
+		email_.sendKeys(Keys.chord(Keys.CONTROL, "a"), stremail_);
 	}
 	
 	@FindBy(id="fld-p1")
 	WebElement password_;
 	public void enterPassword(String strpassword_) {
-		password_.sendKeys(strpassword_);
+		password_.sendKeys(Keys.chord(Keys.CONTROL, "a"), strpassword_);
 	}
 //	@FindBy(className = "c-button-link cia-cancel")
 //	WebElement clickonskip;
@@ -59,6 +60,11 @@ public class LoginBestBuy extends BaseClassBB{
 		Thread.sleep(5000);
 		//signInButton.click();
 	}
-	
+	public String negativeScenario() {
+		WebElement n=driver.findElement(By.xpath("//div[text()='Oops! The email or password did not match our records. Please try again.']"));
+		String ele=n.getText();
+		return ele;
+
+	}
 	
 }

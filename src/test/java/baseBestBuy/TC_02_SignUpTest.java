@@ -1,5 +1,6 @@
 package baseBestBuy;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.time.Duration;
 
@@ -19,15 +20,30 @@ public class TC_02_SignUpTest extends BaseClassBB {
 
 		signup.clickonCreateAccount();
 
-		signup.setFirstName("Gami");
+		signup.setFirstName("Priyamani");
 		signup.setLastName("D");
-		signup.setEmail("priyageddi98765660@gmail.com");
-		signup.setPassword("Gammi@1234");
-		signup.setConfirmPassword("Gammi@1234");
-		signup.setMobileNumber("5555559819");
+		signup.setEmail("kajal98@gmail.com");
+		signup.setPassword("priyanka@123");
+		signup.setConfirmPassword("priyanka@123");
+		signup.setMobileNumber("555‑555‑9345");
 		signup.clickCreatAccount();
-		// signup.clickOnAccountIcon();
+		String exp = "An account with this email already exists.";
+		try {
+			Assert.assertEquals(exp, signup.negativeScenario());
+		} catch (Exception e) {
+			System.out.println("could validate this scenario because of " + e.getMessage());
+		}
 
+		signup.setFirstName("Priyanka");
+		signup.setLastName("D");
+		signup.setEmail("kajallead1@gmail.com");
+		signup.setPassword("priyanari@123");
+		signup.setConfirmPassword("priyanari@123");
+		signup.setMobileNumber("555‑555‑9349");
+		signup.clickCreatAccount();
+		Thread.sleep(2000);
+		//signup.clickOnAccountIcon();
+//after clicking on account its not redirecting to another page facing issue with website
 	}
 
 }

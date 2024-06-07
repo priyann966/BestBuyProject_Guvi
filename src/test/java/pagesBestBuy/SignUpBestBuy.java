@@ -3,6 +3,7 @@ package pagesBestBuy;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,46 +34,52 @@ final WebDriver driver;
 		createaccount.click();
 	}
 
+	public String negativeScenario() {
+	WebElement n=driver.findElement(By.xpath("//strong[text()='An account with this email already exists.']"));
+	String text=n.getText();
+	return text;
+		
+	}
 	@FindBy(id = "firstName")
 	WebElement firstName;
 
 	public void setFirstName(String strfirstName) {
-		firstName.sendKeys(strfirstName);
+		firstName.sendKeys(Keys.chord(Keys.CONTROL, "a"), strfirstName);
 	}
 
 	@FindBy(id = "lastName")
 	WebElement lastName;
 
 	public void setLastName(String strlastName) {
-		lastName.sendKeys(strlastName);
+		lastName.sendKeys(Keys.chord(Keys.CONTROL, "a"), strlastName);
 	}
 
 	@FindBy(id = "email")
 	WebElement email;
 
 	public void setEmail(String strEmail) {
-		email.sendKeys(strEmail);
+		email.sendKeys(Keys.chord(Keys.CONTROL, "a"), strEmail);
 	}
 
 	@FindBy(id = "fld-p1")
 	WebElement password;
 
 	public void setPassword(String strPassword) {
-		password.sendKeys(strPassword);
+		password.sendKeys(Keys.chord(Keys.CONTROL, "a"), strPassword);
 	}
 
 	@FindBy(id = "reenterPassword")
 	WebElement confirmPassword;
 
 	public void setConfirmPassword(String strconfirmPassword) {
-		confirmPassword.sendKeys(strconfirmPassword);
+		confirmPassword.sendKeys(Keys.chord(Keys.CONTROL, "a"), strconfirmPassword);
 	}
 
 	@FindBy(id = "phone")
 	WebElement mobileNumber;
 
 	public void setMobileNumber(String strmobileNumber) {
-		mobileNumber.sendKeys(strmobileNumber);
+		mobileNumber.sendKeys(Keys.chord(Keys.CONTROL, "a"), strmobileNumber);
 	}
 
 	@FindBy(id = "is-recovery-phone")
@@ -99,4 +106,6 @@ final WebDriver driver;
 
 	}
 		
+	
+	
 }
