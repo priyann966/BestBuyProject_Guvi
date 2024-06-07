@@ -40,7 +40,7 @@ public class BaseClassBB {
 		driver.navigate().to("https://www.bestbuy.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(35));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		System.out.println("Browser launched");
 	}
 
