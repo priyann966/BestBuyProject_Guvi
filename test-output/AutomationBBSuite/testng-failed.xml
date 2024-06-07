@@ -10,13 +10,13 @@
           <include name="checkoutPage"/>
         </methods>
       </class> <!-- baseBestBuy.TC_09_CheckOutPageTest -->
-      <class name="baseBestBuy.TC_06_SearchAddIteamTestBB">
+      <class name="baseBestBuy.TC_05_TestNavigationOfAllMenu">
         <methods>
           <include name="closeBrowser"/>
           <include name="launchBrowser"/>
-          <include name="addToCart"/>
+          <include name="testNavigationAllMenuTitle"/>
         </methods>
-      </class> <!-- baseBestBuy.TC_06_SearchAddIteamTestBB -->
+      </class> <!-- baseBestBuy.TC_05_TestNavigationOfAllMenu -->
     </classes>
   </test> <!-- BestBuyTest(failed) -->
 </suite> <!-- Failed suite [AutomationBBSuite] -->
